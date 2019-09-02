@@ -16,12 +16,12 @@ def giris():
 
         tercihYazisi={
                     "0":"Aşağıdakilerden birini tercih ediniz(Sıra numarasını giriniz) :",
-                    "1":"Yıllık basit faiz hesaplama",
-                    "2":"Aylık basit faiz hesaplama",
-                    "3":"Günlük basit faiz hesaplama"
+                    "1":"\n1) Yıllık basit faiz hesaplama",
+                    "2":"\n2) Aylık basit faiz hesaplama",
+                    "3":"\n3) Günlük basit faiz hesaplama"
                     }
     
-        tercih=input("{}\n1) {}\n2) {}\n3) {}\nTercihiniz :".format(*tercihYazisi.values()))
+        tercih=input("{}{}{}{}\nTercihiniz :".format(*tercihYazisi.values()))
 
         if tercih == "1":
             hesaplama("yıl", 100)
