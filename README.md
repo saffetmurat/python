@@ -7,3 +7,4 @@ Python programlama dili ile yapılmış basit kod örnekleri<br><br>
 -SicaklikDonusumleri.py dosyası belli bir sıcaklık türünden girilen bir değerin başka bir sıcaklık türündeki sayısal karşılığını hesaplamaktadır.<br><br>
 -HesapMakinesi.py dosyası toplama, çarpma gibi basit hesaplamaları içeren bir program olarak hazırlanmıştır.<br><br>
 -GorselBasitHesapMakinesi.py dosyası tkinter kullanılarak bir arayuz oluşturulan basit bir hesap makinesi olacak şekilde yazılmıştır.<br><br>
+-TabanDonusumleri.py dosyası girilen bir tabandaki sayının istenen tabandaki değerini hesaplamak üzere yazılmıştır.<br><br>
