@@ -1,3 +1,5 @@
+import time
+
 def aciklamalar():
     baslık="""Klavyeden girilen N adet tam sayının 
 negatif ve pozit olanları ile tüm sayıların
@@ -37,3 +39,5 @@ def ortalamaHesaplama():
 if __name__ == "__main__":
     aciklamalar()
     ortalamaHesaplama()
+    print("Program Kapatılıyor....")
+    time.sleep(5)
