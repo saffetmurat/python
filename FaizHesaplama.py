@@ -1,3 +1,5 @@
+import time
+
 #varsayılan olarak yılı hesaplar
 def hesaplama(tarih="yıl",payda=100): 
     anaPara = float(input("Faize koyacağınız Ana Paranızı giriniz :"))
@@ -32,9 +34,12 @@ def giris():
         else:
             print("Anlamsız bir tecih numarası girdiniz.")
     except:
-        print("Anlaşılamayan bir hata oluştu :(\nProgram Kapatılıyor.")
+        print("Anlaşılamayan bir hata oluştu :(\n")
 
 if __name__ == "__main__":
-	giris()
-
-
+    giris()
+    say = 20
+    while say:
+        print("\rProgram Kapatılıyor. Son {} sn...".format(say),end="")
+        time.sleep(1)
+        say -= 1
