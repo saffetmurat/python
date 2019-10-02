@@ -1,3 +1,4 @@
+import time
 
 class Sicaklik():
 
@@ -22,12 +23,15 @@ değere dönüştürmeyi amaçlamaktadır.""",
         print(self.__yazilar[1],self.__yazilar[2],self.__yazilar[3], sep="\n")
 
     def baslama(self):
-        self.tur1 = input("1) {}\n2) {}\n3) {}\n4) {}{}".format(*self.sicaklikTurleri,self.__yazilar[4]))
-        self.turSicaklik = float(input(self.__yazilar[5]))
+        try:
+            self.tur1 = input("1) {}\n2) {}\n3) {}\n4) {}{}".format(*self.sicaklikTurleri,self.__yazilar[4]))
+            self.turSicaklik = float(input(self.__yazilar[5]))
 
-        self.tur2 = input("\n1) {}\n2) {}\n3) {}\n4) {}{}".format(*self.sicaklikTurleri,self.__yazilar[6]))
+            self.tur2 = input("\n1) {}\n2) {}\n3) {}\n4) {}{}".format(*self.sicaklikTurleri,self.__yazilar[6]))
 
-        self.sicaklikDonusumler()
+            self.sicaklikDonusumler()
+        except:
+            print("Bir hatayla karşılaşıldı!")
 
     def sicaklikDonusumler(self):
 
@@ -67,3 +71,9 @@ değere dönüştürmeyi amaçlamaktadır.""",
 
 if __name__ == "__main__":
     s = Sicaklik()
+    
+    say = 20
+    while say:
+        print("\rProgram Kapatılıyor. Son {} saniye....".format(say),end="")
+        time.sleep(1)
+        say -= 1
