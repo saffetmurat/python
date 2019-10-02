@@ -1,3 +1,5 @@
+import time
+
 class TabanDonusturme():
     __baslik = "TAM SAYILAR İÇİN TABAN DÖNÜŞÜMLERİ (2,3,4,5,6,7,8,9,10)"
     __hataMesaji = ""
@@ -61,3 +63,9 @@ class TabanDonusturme():
 
 if __name__ == "__main__":
     tb = TabanDonusturme()
+
+    sayac = 20
+    while sayac:
+        print("\rProgram Kapatılıyor. Son {} saniye ...".format(sayac),end="")
+        time.sleep(1)
+        sayac -= 1
