@@ -10,3 +10,4 @@ Python programlama dili ile yapılmış basit kod örnekleri<br><br>
 -TabanDonusumleri.py dosyası girilen bir tabandaki sayının istenen tabandaki değerini hesaplamak üzere yazılmıştır.<br><br>
 -BasitHesapMakinesi.py dosyası basit matematiksel hesaplamaları yapmak için yazılmış bir python dosyasıdır.<br><br>
 -KarisikMatematikselIslemler.py dosyası faktöriyel, permütasyon, kombinasyon, binom açılımı vb. matematiksel işlemleri yapabilmektedir.<br><br>
+-SinifDersDurumu.py dosyası kullanıcıdan ders sayısı, öğrenci sayısı ve öğrencilerin notlarını alarak her ders için o dersin not ortalamasını ve her öğrencinin hangi dersten geçip kaldığını belirten bir programdır.<br><br>
