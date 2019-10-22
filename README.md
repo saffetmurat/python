@@ -12,3 +12,4 @@ Python programlama dili ile yapılmış basit kod örnekleri<br><br>
 -KarisikMatematikselIslemler.py dosyası faktöriyel, permütasyon, kombinasyon, binom açılımı vb. matematiksel işlemleri yapabilmektedir.<br><br>
 -SinifDersDurumu.py dosyası kullanıcıdan ders sayısı, öğrenci sayısı ve öğrencilerin notlarını alarak her ders için o dersin not ortalamasını ve her öğrencinin hangi dersten geçip kaldığını belirten bir programdır.<br><br>
 -AdamAsmaca_Tkinter.py dosyası tkinter kullanılarak hazırlanmış basit bir Adam Asmaca Oyunudur.<br><br>
+-AgacCizme.py dosyası girilen sayısal değerlere göre rastgele bir türede ağaç resmi çizmektedir.<br><br>
