@@ -14,3 +14,5 @@ Python programlama dili ile yapılmış basit kod örnekleri<br><br>
 -AdamAsmaca_Tkinter.py dosyası tkinter kullanılarak hazırlanmış basit bir Adam Asmaca Oyunudur.<br><br>
 -AgacCizme.py dosyası girilen sayısal değerlere göre rastgele bir türede ağaç resmi çizmektedir.<br><br>
 -AlanCevreHesaplama.py dosyası dikdörtgen, üçgen ve çember için alan veya çevre hesabı yapmaktadır. Kullanıcının gireceği sayısal değerlere ve kullanıcının alan veya çevre tercihine göre sonuç üretmektedir.<br><br>
+-ZamanUygulamasi_Tkinter.py dosyası kullanıcıya, kullanıcının seçtiği dilde ve kullanıcının seçtiği gösterim şeklinde zamanı göstermektedir. İsterse kullanıcı gün, saat, UTC vb.lerine göre zamanı ayarlayabilir. Programın görsel arayüzü için tkinter kullanılmıştır.<br><br>
+
