@@ -13,3 +13,4 @@ Python programlama dili ile yapılmış basit kod örnekleri<br><br>
 -SinifDersDurumu.py dosyası kullanıcıdan ders sayısı, öğrenci sayısı ve öğrencilerin notlarını alarak her ders için o dersin not ortalamasını ve her öğrencinin hangi dersten geçip kaldığını belirten bir programdır.<br><br>
 -AdamAsmaca_Tkinter.py dosyası tkinter kullanılarak hazırlanmış basit bir Adam Asmaca Oyunudur.<br><br>
 -AgacCizme.py dosyası girilen sayısal değerlere göre rastgele bir türede ağaç resmi çizmektedir.<br><br>
+-AlanCevreHesaplama.py dosyası dikdörtgen, üçgen ve çember için alan veya çevre hesabı yapmaktadır. Kullanıcının gireceği sayısal değerlere ve kullanıcının alan veya çevre tercihine göre sonuç üretmektedir.<br><br>
