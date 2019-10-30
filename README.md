@@ -16,4 +16,5 @@ Python programlama dili ile yapılmış basit kod örnekleri<br><br>
 -AlanCevreHesaplama.py dosyası dikdörtgen, üçgen ve çember için alan veya çevre hesabı yapmaktadır. Kullanıcının gireceği sayısal değerlere ve kullanıcının alan veya çevre tercihine göre sonuç üretmektedir.<br><br>
 -ZamanUygulamasi_Tkinter.py dosyası kullanıcıya, kullanıcının seçtiği dilde ve kullanıcının seçtiği gösterim şeklinde zamanı göstermektedir. İsterse kullanıcı gün, saat, UTC vb.lerine göre zamanı ayarlayabilir. Programın görsel arayüzü için tkinter kullanılmıştır.<br><br>
 -BasitTasKagitMakasOyunu.py dosyası ile basit bir taş kağıt makas oyunu tasarlanmıştır.<br><br>
--
+-Sinh(x)Hesaplama.py dosyası klavyeden girilen x sayısının sinh(x) değerini, yine klavyeden girilecek olan N terim sayısına
+kadar seriye açarak hesaplamaktadır.<br><br>
