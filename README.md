@@ -18,3 +18,4 @@ Python programlama dili ile yapılmış basit kod örnekleri<br><br>
 -BasitTasKagitMakasOyunu.py dosyası ile basit bir taş kağıt makas oyunu tasarlanmıştır.<br><br>
 -Sinh(x)Hesaplama.py dosyası klavyeden girilen x sayısının sinh(x) değerini, yine klavyeden girilecek olan N terim sayısına
 kadar seriye açarak hesaplamaktadır.<br><br>
+-SiralamaAlgoritmalari.py dosyasında Selection Sort ve Bubble Sort algoritmaları bulunmaktadır. Kullanıcının seçeceği bir algrotima ile kullanıcının girdiği bir dizi, yine kullanıcının seçeçeği sıralama yönü ile sıralanacaktır.<br><br>
