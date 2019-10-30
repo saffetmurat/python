@@ -1,4 +1,6 @@
-class siralamaAlgrotimalari():
+import time
+
+class SiralamaAlgoritmalari():
     __yazilar = {
         "0" : "Sistemde kayıtlı algoritmalar aşağıdadır. Kullanmak istediğinizin sıra numarasını giriniz.\n",
         "1" : "1) Seçerek/Seçmeli Sıralama (Selection Sort)\n",
@@ -81,6 +83,7 @@ class siralamaAlgrotimalari():
         print("En son elde edilen sıralı liste =>", liste, sep="\n")  
 
 if __name__ == "__main__":
-    siralamaAlgrotimalari()
+    SiralamaAlgoritmalari()
+    time.sleep(1)
 
 
