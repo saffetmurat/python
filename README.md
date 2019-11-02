@@ -19,4 +19,5 @@ Python programlama dili ile yapılmış basit kod örnekleri<br><br>
 -Sinh(x)Hesaplama.py dosyası klavyeden girilen x sayısının sinh(x) değerini, yine klavyeden girilecek olan N terim sayısına
 kadar seriye açarak hesaplamaktadır.<br><br>
 -SiralamaAlgoritmalari.py dosyasında Selection Sort ve Bubble Sort algoritmaları bulunmaktadır. Kullanıcının seçeceği bir algrotima ile kullanıcının girdiği bir dizi, yine kullanıcının seçeçeği sıralama yönü ile sıralanacaktır.<br><br>
--SayiTahminOyunu.py dosyası 0 ile 100 arasında rastgele bir sayı üretir. Kullanıcıdan aldığı sayıyla karşılaştırarak kullanıcının tahmininin doğru olup olmadığını belirtir. Duruma göre kullanıcıya gireceği sayının daha büyük veya küçük olması gererktiğiyle ilgili ipucu verir.
+-SayiTahminOyunu.py dosyası 0 ile 100 arasında rastgele bir sayı üretir. Kullanıcıdan aldığı sayıyla karşılaştırarak kullanıcının tahmininin doğru olup olmadığını belirtir. Duruma göre kullanıcıya gireceği sayının daha büyük veya küçük olması gererktiğiyle ilgili ipucu verir.<br><br>
+-MatrisIslemleri.py dosyası girilen iki matrisin çarpımını yapmakta, girilen bir matrisin kuvvetini almakta ve istenen boyutta bir birim matris oluşturabilmektedir.
