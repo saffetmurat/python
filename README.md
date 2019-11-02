@@ -20,4 +20,5 @@ Python programlama dili ile yapılmış basit kod örnekleri<br><br>
 kadar seriye açarak hesaplamaktadır.<br><br>
 -SiralamaAlgoritmalari.py dosyasında Selection Sort ve Bubble Sort algoritmaları bulunmaktadır. Kullanıcının seçeceği bir algrotima ile kullanıcının girdiği bir dizi, yine kullanıcının seçeçeği sıralama yönü ile sıralanacaktır.<br><br>
 -SayiTahminOyunu.py dosyası 0 ile 100 arasında rastgele bir sayı üretir. Kullanıcıdan aldığı sayıyla karşılaştırarak kullanıcının tahmininin doğru olup olmadığını belirtir. Duruma göre kullanıcıya gireceği sayının daha büyük veya küçük olması gererktiğiyle ilgili ipucu verir.<br><br>
--MatrisIslemleri.py dosyası girilen iki matrisin çarpımını yapmakta, girilen bir matrisin kuvvetini almakta ve istenen boyutta bir birim matris oluşturabilmektedir.
+-MatrisIslemleri.py dosyası girilen iki matrisin çarpımını yapmakta, girilen bir matrisin kuvvetini almakta ve istenen boyutta bir birim matris oluşturabilmektedir.<br><br>
+-Dortlu.py dosyasının içinde 4 tane uygulama bulunmaktadır. Bunlar; girilen sayının asal olup olmadığını bulma, fibonacci sayısı hesaplama, bir sayının faktöriyelini bulma, girilen sayının çift/tek olup olmadığını belirleme.
