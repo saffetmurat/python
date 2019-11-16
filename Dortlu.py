@@ -7,6 +7,9 @@ class Karisik():
         "2" : "Fibonacci Sayısını Bulan Program",
         "3" : "Faktöriyel Bulan Program",
         "4" : "Girdiğiniz Sayının Çift/Tek Olup Olmadığını Bulan Program",
+        "5" : "Girdiğiniz Sayıya Kadarki Asal Sayıları Bulan Program",
+        "6" : "Girilen Sayının Armstrong Sayısı Olup Olmadığını Bulan Program",
+        "7" : "Girilen Sayıya Kadarki Armstrong Sayıları Bulan Program",
     }
 
     __hataMesaji = "Anlaşılamayan bir hata oldu. Program Kapatılıyor..."
@@ -39,6 +42,12 @@ class Karisik():
                     self.faktöriyelBulma()
                 elif sira == "4":
                     self.ciftTekBelirleme()
+                elif sira == "5":
+                    self.asallariBulma()
+                elif sira == "6":
+                    self.armstrongMu()
+                elif sira == "7":
+                    self.armstrongBulma()
                 else:
                     pass
 
@@ -46,6 +55,9 @@ class Karisik():
             except:
                 print(self.__hataMesaji)
                 break
+
+            print()
+            time.sleep(2)
     
     def baslik(self, sira):
         print("=" * len(self.__basliklar[sira]), self.__basliklar[sira], "=" * len(self.__basliklar[sira]), sep="\n")
@@ -55,7 +67,7 @@ class Karisik():
         try:
             sayi=int(input("Sayıyı giriniz :"))
 
-            self.sayiKontrol(sayi)
+            self.sayiNegatifKontrol(sayi)
 
             durum = "asaldır."
             for i in range(2,sayi):
@@ -67,9 +79,6 @@ class Karisik():
 
         except:
             print(self.__hataMesaji)
-        
-        print()
-        time.sleep(2)
 
     def fibonacciHesaplama(self):
         self.__hataMesaji = "Bir tamsayı girilmedi.. İşlem İptal ediliyor..."
@@ -80,7 +89,7 @@ class Karisik():
         try:
             terim = int(input("Kaçınçı terime kadar fibonacci sayılarını bulalım : "))
 
-            self.sayiKontrol(terim)
+            self.sayiNegatifKontrol(terim)
 
             print("1. terim = {}\n2. terim = {}".format(birinciTerim, ikinciTerim))
 
@@ -91,16 +100,13 @@ class Karisik():
         except:
             print(self.__hataMesaji)
         
-        print()
-        time.sleep(2)
-
     def faktöriyelBulma(self):
         self.__hataMesaji = "Bir tamsayı girilmedi.. İşlem İptal ediliyor..."
 
         try:
             sayi = int(input("Hangi sayının faktöriyelini bulalım? : "))
 
-            self.sayiKontrol(sayi)
+            self.sayiNegatifKontrol(sayi)
 
             sonuc = 1
             for s in range(2, sayi+1):
@@ -111,15 +117,12 @@ class Karisik():
         except:
             print(self.__hataMesaji)
 
-        print()
-        time.sleep(2)
-
     def ciftTekBelirleme(self):
         self.__hataMesaji = "Bir tamsayı girilmedi.. İşlem İptal ediliyor..."
         try:
             sayi=int(input("Sayıyı giriniz :"))
 
-            self.sayiKontrol(sayi)
+            self.sayiNegatifKontrol(sayi)
             
             durum = "çifttir."
             if sayi%2 != 0:
@@ -130,10 +133,71 @@ class Karisik():
         except:
             print(self.__hataMesaji)
 
-        print()
-        time.sleep(2)
+    def asallariBulma(self):
+        self.__hataMesaji = "Bir tamsayı girilmedi.. İşlem İptal ediliyor..."
+        try:
+            sayi=int(input("Sayıyı giriniz :"))
 
-    def sayiKontrol(self, sayi):
+            self.sayiNegatifKontrol(sayi)
+
+            asallar = []
+            for s in range(2,(sayi+1)):
+                durum=True
+                for m in range(2,s):
+                    if s%m == 0:
+                        durum=False
+                        break
+                if durum:
+                    asallar.append(s)
+            
+            print("Asal olarak bulunan sayılar =>",asallar)
+
+        except:
+            print(self.__hataMesaji)
+    
+    def armstrongMu(self):
+        self.__hataMesaji = "Bir tamsayı girilmedi.. İşlem İptal ediliyor..."
+        try:
+            sayi=int(input("Sayıyı giriniz :"))
+
+            self.sayiNegatifKontrol(sayi)
+            
+            sonuc = 0
+            basamakSayisi = len(str(sayi))
+            for i in str(sayi):
+                sonuc += int(i)**basamakSayisi
+
+            if sonuc == sayi:
+                print("Girilen {} sayısı bir armstrong sayısıdır.".format(sayi))
+            else:
+                print("Girilen {} sayısı bir armstrong sayısı değildir.".format(sayi))
+
+        except:
+            print(self.__hataMesaji)
+
+    def armstrongBulma(self):
+        self.__hataMesaji = "Bir tamsayı girilmedi.. İşlem İptal ediliyor..."
+        try:
+            sayi=int(input("Sayıyı giriniz :"))
+
+            self.sayiNegatifKontrol(sayi)
+
+            armstronglar = []
+            for s in range(2,(sayi+1)):
+                sonuc = 0
+                basamakSayisi = len(str(s))
+                for i in str(s):
+                    sonuc += int(i)**basamakSayisi
+
+                if sonuc == s:
+                    armstronglar.append(sonuc)
+                
+            print("Armstrong sayısı olarak bulunan sayılar =>",armstronglar)
+
+        except:
+            print(self.__hataMesaji)
+
+    def sayiNegatifKontrol(self, sayi):
 
         if sayi < 0:
             self.__hataMesaji = "Girilen sayı Negatif olamaz. İşlem İptal ediliyor..."
