@@ -51,7 +51,6 @@ class Karisik():
                 else:
                     pass
 
-
             except:
                 print(self.__hataMesaji)
                 break
