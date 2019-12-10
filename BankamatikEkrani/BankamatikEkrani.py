@@ -63,6 +63,10 @@ class Bankamatik():
         bttnCikis.place(relx=0.03,rely=0.89)
 
         self.anaPencere.mainloop()
+    
+    def nesneDoldur(self, *args):
+        for nesne in args:
+            self.__nesneler.append(nesne)
 
     def ortakPencereKisimlari(self, baslik, boyutlar, agacYukseklik=18, agacGenislik=186, butonFont="Times 14", butonGenislik=26):
         self.anaPencere.destroy()
@@ -156,11 +160,8 @@ class Bankamatik():
        
         hesapTurLabel = Label(self.__pencereListesi[0], text="{}".format(self.hesaplarBilgisi[0][3]), font="Times 12")#Başlangıçta ilk kayıttaki hesap türü alınır.
 
-        self.__nesneler.append(comboHesapNo)
-        self.__nesneler.append(hesapTurLabel)
-        self.__nesneler.append(tutarEntry)
-        self.__nesneler.append(hesapAgaci)
-
+        self.nesneDoldur(comboHesapNo, hesapTurLabel, tutarEntry, hesapAgaci)
+            
         comboHesapNo.bind("<<ComboboxSelected>>", self.combodanGelen)
 
         buttonCek = Button(self.__pencereListesi[0], text="Parayı Çek", font="Times 14", bg="lightblue", width=26, command=self.paraCek)
@@ -222,10 +223,7 @@ class Bankamatik():
        
         hesapTurLabel = Label(self.__pencereListesi[0], text="{}".format(self.hesaplarBilgisi[0][3]), font="Times 12")#Başlangıçta ilk kayıttaki hesap türü alınır.
 
-        self.__nesneler.append(comboHesapNo)
-        self.__nesneler.append(hesapTurLabel)
-        self.__nesneler.append(tutarEntry)
-        self.__nesneler.append(hesapAgaci)
+        self.nesneDoldur(comboHesapNo, hesapTurLabel, tutarEntry, hesapAgaci)
 
         comboHesapNo.bind("<<ComboboxSelected>>", self.combodanGelen)
 
@@ -290,14 +288,7 @@ class Bankamatik():
        
         hesapTurLabel = Label(self.__pencereListesi[0], text="{}".format(self.hesaplarBilgisi[0][3]), font="Times 12")#Başlangıçta ilk kayıttaki hesap türü alınır.
 
-        self.__nesneler.append(comboHesapNo1)
-        self.__nesneler.append(hesapTurLabel)
-        self.__nesneler.append(tutarEntry)
-        self.__nesneler.append(hesapAgaci)
-        self.__nesneler.append(comboHesapNo2)
-        self.__nesneler.append(paraYatirKendiLabel)
-        self.__nesneler.append(paraYatirBaskaLabel)
-        self.__nesneler.append(hesapNumarasiEntry)
+        self.nesneDoldur(comboHesapNo1, hesapTurLabel, tutarEntry, hesapAgaci, comboHesapNo2, paraYatirKendiLabel, paraYatirBaskaLabel, hesapNumarasiEntry)
         
         comboHesapNo1.bind("<<ComboboxSelected>>", self.combodanGelen)
 
@@ -415,9 +406,7 @@ class Bankamatik():
         comboHesapTur = ttk.Combobox( self.__pencereListesi[0], state = 'readonly', values = ["TL","EURO","USD"], width=15)
         comboHesapTur.current(0)
 
-        self.__nesneler.append(comboHesapTur)
-        self.__nesneler.append(hesapTurLabel)
-        self.__nesneler.append(hesapAgaci)
+        self.nesneDoldur(comboHesapTur, hesapTurLabel, hesapAgaci)
 
         buttonAc = Button(self.__pencereListesi[0], text="Hesabı Aç", font="Times 14", bg="lightblue", width=26, command=self.hesapAc)
 
@@ -461,9 +450,7 @@ class Bankamatik():
         comboHesapNo = ttk.Combobox( self.__pencereListesi[0], state = 'readonly', values = [hesap[1] for hesap in self.hesaplarBilgisi], width=15)
         comboHesapNo.current(0)
 
-        self.__nesneler.append(comboHesapNo)
-        self.__nesneler.append(hesapNumarasiLabel)
-        self.__nesneler.append(hesapAgaci)
+        self.nesneDoldur(comboHesapNo, hesapNumarasiLabel, hesapAgaci)
 
         buttonSil = Button(self.__pencereListesi[0], text="Hesabı Sil", font="Times 14", bg="lightblue", width=26, command=self.hesapSil)
 
@@ -527,13 +514,7 @@ class Bankamatik():
         tutarEntry = Entry(self.__pencereListesi[0])
         hesapTurLabel = Label(self.__pencereListesi[0], text="{}".format(self.hesaplarBilgisi[0][3]), font="Times 12")#Başlangıçta ilk kayıttaki hesap türü alınır.
 
-        self.__nesneler.append(comboHesapNo)
-        self.__nesneler.append(hesapTurLabel)
-        self.__nesneler.append(hesapAgaci)
-        self.__nesneler.append(comboOdemeTur)
-        self.__nesneler.append(comboKurumAdi)
-        self.__nesneler.append(tutarEntry)
-        self.__nesneler.append(sozlesmeNoEntry)
+        self.nesneDoldur(comboHesapNo, hesapTurLabel, hesapAgaci, comboOdemeTur, comboKurumAdi, tutarEntry, sozlesmeNoEntry)
 
         comboHesapNo.bind("<<ComboboxSelected>>", self.combodanGelen)
         comboOdemeTur.bind("<<ComboboxSelected>>", self.combodanGelen1)
