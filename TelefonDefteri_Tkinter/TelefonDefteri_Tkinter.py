@@ -26,6 +26,7 @@ class TelefonDefteri():
         ############ Rehber Bilgisi Alınır ####################################
         dsy = self.dosyaAc("r")
         self.__rehberBilgisi = dsy.readlines()
+        dsy.close()
 
     def menuYapma(self, ekran):
         try:
@@ -313,6 +314,8 @@ class TelefonDefteri():
                     self.__rehberBilgisi.append(icerik)
 
         self.rehberAgaciniGuncelleme(3)
+        
+        dsy.close()
 
     def ekleEkrani(self):
         try:
