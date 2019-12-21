@@ -40,3 +40,4 @@ kadar seriye açarak hesaplamaktadır.<br><br>
 37-TelefonDefteri_Tkinter uygulaması ile basit bir telefon defteri tasarlanmıştır. Arayüz için Tkinter kullanılmıştır. Bu uygulamada arama, kişi ekleme, kişi silme, düzenleme vb. işlemler bulunmaktadır. Veritabanı olarak TelefonDefteri.csv dosyasını kullanmaktadır.<br><br>
 38-PuanHesaplama_Tkinter.py uygulaması kullanıcıdan Matematik, Türkçe, Fen ve Sosyal derslerinde yaptığı doğru, boş ve yanlış soru sayılarını alarak puan hesaplamaktadır. Ve hesapladığı puana göre yorum yapmaktadır.<br><br>
 39-TelefonTarifesi_Tkinter uygulaması kullanıcının sistemde kayıtlı olan tarifelerden seçtiği tarifeye ve kullanıcının girdiği kullanım miktarlarına göre tahmini fatura hesabı yapmaktadır.<br><br>
+40-MetinIslemleri_Tkinter.py uygulaması girilen bir metindeki harflerin veya kelimelerin yerlerini değiştirmektedir. Arayüz için tkinter kullanılmıştır.
