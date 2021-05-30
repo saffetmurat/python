@@ -66,7 +66,7 @@ class SBOUOYB():
                 return siniflar
     def hesaplama(self,siniflar=[]):
         """ 
-        Öklit Yönteminde sınıfların homojen ve dairesel bir dağıolıma sahip olduğu kabuyl edilir.
+        Öklit Yönteminde sınıfların homojen ve dairesel bir dağılıma sahip olduğu kabul edilir.
         Bu yüzden sınıfların orta noktaları bulunur ve Öklit yöntemi bu orta noktalar üzerinden yapılır.
         """
         
